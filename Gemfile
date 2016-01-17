@@ -12,6 +12,12 @@ gem 'jbuilder', '~> 2.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'puma'
 
+gem 'omniauth-github'
+
+group :test do
+  gem 'factory_girl'
+end
+
 group :development, :test do
   gem 'foreman'
   gem 'byebug'
