@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'puma'
 
 group :development, :test do
+  gem 'foreman'
   gem 'byebug'
   # gem 'web-console', '~> 2.0'
   # gem 'spring'
