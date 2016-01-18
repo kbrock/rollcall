@@ -1,0 +1,10 @@
+<div class="status status--available">
+  <div class="status__badge">
+    <%= user_avatar(status.user) %>
+    <div class="status__presence"></div>
+  </div>
+  <b class="status__name"><%= user_name(status.user) %></b>
+  <span class="status__body"><%= status.body %></span>
+  <p class="status__time">Today 12:30pm</p>
+  <a href="<%=edit_status_path(status)%>" class="btn btn-md no-border radius-all-100 btn-black status__edit"><i class="glyph-icon icon-comments-o"></i></a>
+</div>

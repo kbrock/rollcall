@@ -1,8 +1,8 @@
 module UsersHelper
-  def user_avatar(user, size = 30)
+  def user_avatar(user, size = 40)
     if (image = user.try(:image).presence)
       appender = image.include?('?') ? '&' : '?'
-      image_tag "#{image}#{appender}s=#{size}", size: size, alt: user_name(user), class: 'user-avatar'
+      image_tag "#{image}#{appender}s=#{size}", size: size, alt: user_name(user), class: 'status__avatar'
     end
   end
 

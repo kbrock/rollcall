@@ -1,6 +1,0 @@
-<% if logged_in? %>
-  <%= render current_user %>
-  <%= link_to "signout", signout_path %>
-<%- else -%>
-  <%= link_to "Sign in with Github", "/auth/github" %>
-<% end %>

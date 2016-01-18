@@ -1,0 +1,56 @@
+.status {
+  position: relative;
+
+  .status__badge {
+    position: relative;
+    display: inline-block;
+    float:left;
+    margin: 0 10px 0 0;
+  }
+  .status__avatar { border-radius: 50%; }
+  .status__presence {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    /* */
+    overflow: hidden;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: 3px solid #fff !important;
+    border-radius: 20px;
+  }
+  &.status--available .status__presence {
+    background: #33aa66;
+  }
+  .status__name {
+    padding: 4px 0 0;
+    font-size: 12px;
+  }
+  .status__body {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.6em;
+  }
+  .status__time {
+    font-size: 10px;
+    color: #888;
+  }
+  a.btn-md {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -17px;
+    padding: 0 10px;
+  }
+}
+
+.statuses {
+  margin: 0; padding: 0;
+  list-style: none;
+  .status {
+    margin: 15px;
+    padding: 0;
+    z-index:35;
+  }
+}
