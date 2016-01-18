@@ -23,6 +23,10 @@ group :test do
   gem 'factory_girl_rails'
 end
 
+group :development do
+  gem 'rack-mini-profiler'
+end
+
 group :development, :test do
   gem 'foreman'
   gem 'byebug'
