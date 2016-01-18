@@ -1,0 +1,4 @@
+.env
+tmp
+Gemfile.lock
+log/*.log
